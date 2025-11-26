@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <AutoCompleteTextView
+        android:id="@+id/searchCity"
+        android:hint="Search by City or State"
+        android:textColorHint="@color/black"
+        android:drawableStart="@android:drawable/ic_menu_search"
+        android:padding="12dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/edittext_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:id="@+id/vehicleTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dialog"
+        android:theme="@style/SpinnerTheme"
+        android:textColor="@color/black"
+        android:autofillHints="select vehicle "
+        android:layout_marginBottom="12dp" />
+
+    <Button
+        android:id="@+id/searchButton"
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:background="@drawable/btn_login_background" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

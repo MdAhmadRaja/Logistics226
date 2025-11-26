@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Transparent Dialog Style -->
+    <style name="TransparentDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">true</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+    </style>
+
+    <!-- Centered Bottom Navigation (with neon glow) -->
+    <style name="BottomNavigationViewCentered" parent="@style/Widget.MaterialComponents.BottomNavigationView.Colored">
+        <item name="itemIconSize">30dp</item>
+        <item name="itemHorizontalTranslationEnabled">false</item>
+        <item name="itemIconTint">@color/nav_item_color</item>
+        <item name="itemTextAppearanceActive">@style/BottomNavTextCentered</item>
+        <item name="itemTextAppearanceInactive">@style/BottomNavTextCentered</item>
+    </style>
+
+    <!-- Centered Text for Bottom Nav -->
+    <style name="BottomNavTextCentered" parent="@style/TextAppearance.MaterialComponents.Caption">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingTop">0dp</item>
+        <item name="android:paddingBottom">0dp</item>
+        <item name="android:textColor">@color/nav_item_color</item>
+    </style>
+
+    <!-- Neon glow effect for selected icons/text -->
+    <style name="BottomNavNeonGlow">
+        <item name="android:shadowColor">#00FFFF</item>   <!-- Neon Blue glow -->
+        <item name="android:shadowDx">0</item>
+        <item name="android:shadowDy">0</item>
+        <item name="android:shadowRadius">10</item>
+    </style>
+
+    <style name="SpinnerTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:background">#000000</item>
+    </style>
+
+</resources>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "437732855316",
+    "project_id": "tthfebauthentication",
+    "storage_bucket": "tthfebauthentication.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:437732855316:android:6b30560f1d835b49dda101",
+        "android_client_info": {
+          "package_name": "com.example.logistics"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "437732855316-aeel7v27dddquk1h9c7ujrbouqmu87qj.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.logistics",
+            "certificate_hash": "802eb66e80dab768a16542751128760de06aff58"
+          }
+        },
+        {
+          "client_id": "437732855316-abl6a1mulppm34sc46g0j1afr2kbtpev.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB920RSf1lkeAZ8fmd128slqMo369E4aGc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "437732855316-abl6a1mulppm34sc46g0j1afr2kbtpev.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/downloadTemplateButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Download CSV Template"
+        android:layout_marginBottom="16dp"/>
+
+    <Button
+        android:id="@+id/uploadCsvButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Upload CSV"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textColor="#FF0000"
+        android:paddingTop="8dp"/>
+
+</LinearLayout>

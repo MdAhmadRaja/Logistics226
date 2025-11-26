@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/backgrnd"
+    android:padding="0dp">
+
+    <!-- 🔹 Top Section -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:gravity="center">
+
+        <!-- Background Image -->
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_66"
+            android:alpha="0.9" />
+
+        <!-- App Logo + Title -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+
+
+            <!-- Dual-layer glowing title -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:layout_gravity="center">
+
+                <!-- Outer neon glow border -->
+                <TextView
+                    android:id="@+id/appNameBorder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LogiTrack"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="#000000"
+                    android:shadowColor="#00E5FF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="14"
+                    android:alpha="0.9"
+                    android:gravity="center" />
+
+                <!-- Inner white glowing text -->
+                <TextView
+                    android:id="@+id/appName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LogiTrack"
+                    android:textSize="38sp"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif-black"
+                    android:textColor="@android:color/white"
+                    android:shadowColor="#00D0FF"
+                    android:shadowDx="0"
+                    android:shadowDy="0"
+                    android:shadowRadius="8"
+                    android:gravity="center" />
+            </FrameLayout>
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <!-- 🔹 Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose your Role to Proceed"
+        android:textColor="#FFFFFF"
+        android:textSize="17sp"
+        android:layout_marginTop="100dp"
+        android:fontFamily="sans-serif-medium" />
+
+    <!-- 🔹 Center Role Selector -->
+    <FrameLayout
+        android:id="@+id/roleToggleContainer"
+        android:layout_width="330dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="40dp"
+        android:gravity="center">
+
+        <!-- Neon Futuristic Background -->
+        <ImageView
+            android:id="@+id/rotatingNeon"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/toggle_futuristic_bg"
+            android:scaleType="fitXY"
+            android:alpha="0.9" />
+
+        <!-- Interactive Role Toggle -->
+        <RelativeLayout
+            android:id="@+id/roleToggle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="6dp"
+            android:elevation="10dp">
+
+            <!-- Role A -->
+            <LinearLayout
+                android:id="@+id/roleA"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/roleAText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="LOGISTICS OWNER"
+                    android:textColor="#B0BEC5"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-condensed" />
+            </LinearLayout>
+
+            <!-- Role B -->
+            <LinearLayout
+                android:id="@+id/roleB"
+                android:layout_width="160dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentEnd="true"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/roleBText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="VEHICLE OWNER"
+                    android:textColor="#B0BEC5"
+                    android:textStyle="bold"
+                    android:textSize="13sp"
+                    android:fontFamily="sans-serif-condensed" />
+            </LinearLayout>
+
+            <!-- Center Neon Switch (Glow + Icon) -->
+            <FrameLayout
+                android:id="@+id/switchCircle"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_centerInParent="true"
+                android:elevation="12dp">
+
+                <!-- Outer Glowing Border -->
+                <ImageView
+                    android:id="@+id/switchGlow"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/switch_glow_circle"
+                    android:scaleType="fitXY"
+                    android:alpha="0.8" />
+
+                <!-- Inner Icon -->
+                <ImageView
+                    android:id="@+id/switchIcon"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_88"
+                    android:scaleType="centerCrop" />
+            </FrameLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- 🔹 Sign-in Button -->
+    <LinearLayout
+        android:id="@+id/googleAuthBtn"
+        android:layout_width="330dp"
+        android:layout_height="55dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/login_btnn">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign-in"
+            android:textColor="#FFFFFF"
+            android:textSize="23sp"
+            android:fontFamily="sans-serif-medium" />
+    </LinearLayout>
+</LinearLayout>

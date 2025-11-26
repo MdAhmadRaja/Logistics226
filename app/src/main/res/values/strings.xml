@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Logistics</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="default_web_client_id">437732855316-abl6a1mulppm34sc46g0j1afr2kbtpev.apps.googleusercontent.com</string>
+
+    <string-array name="role_options">
+        <item>OWNER</item>
+        <item>USER</item>
+    </string-array>
+
+    <string-array name="chart_modes">
+        <item>Day</item>
+        <item>Month</item>
+        <item>Year</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,156 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#CED1D3">
+    <!--working-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- Logistic Type -->
+        <EditText
+            android:id="@+id/logisticType"
+            android:hint="Logistic Type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Tons -->
+        <EditText
+            android:id="@+id/tonAmount"
+            android:hint="Tons"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Price Per Ton -->
+        <EditText
+            android:id="@+id/pricePerTon"
+            android:hint="Price per Ton"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Total Price -->
+        <TextView
+            android:id="@+id/totalPrice"
+            android:text="Total Price: ₹0.0"
+            android:textStyle="bold"
+            android:textColor="#B71C1C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Vehicle Type Spinner -->
+        <Spinner
+            android:id="@+id/vehicleTypeSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_background"
+            android:spinnerMode="dialog"
+            android:theme="@style/SpinnerTheme"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Contact Number -->
+        <EditText
+            android:id="@+id/contactNumber"
+            android:hint="Contact Number"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Source City -->
+        <AutoCompleteTextView
+            android:id="@+id/sourceCity"
+            android:hint="Source City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Source State -->
+        <EditText
+            android:id="@+id/sourceState"
+            android:hint="Source State"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="8dp"
+            android:focusable="false"/>
+
+        <!-- Destination City -->
+        <AutoCompleteTextView
+            android:id="@+id/destinationCity"
+            android:hint="Destination City"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- Destination State -->
+        <EditText
+            android:id="@+id/destinationState"
+            android:hint="Destination State"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="8dp"
+            android:focusable="false"/>
+
+        <!-- Date Field -->
+        <EditText
+            android:id="@+id/dateField"
+            android:hint="Select Date"
+            android:focusable="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_bar_bg"
+            android:padding="12dp"
+            android:textColor="#000"
+            android:textColorHint="#888"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submitButton"
+            android:text="Submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#0789F0"
+            android:textColor="#FFF"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <AutoCompleteTextView
+        android:id="@+id/sourceu2user"
+        android:hint="Source State"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#040404"
+        android:completionThreshold="1"
+        android:background="@drawable/search_bar_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <AutoCompleteTextView
+        android:id="@+id/destinationu2user"
+        android:hint="Destination State"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:textColorHint="#090909"
+        android:textColor="#0B0B0B"
+        android:completionThreshold="1"
+        android:background="@drawable/search_bar_bg"
+        android:padding="12dp"
+        android:layout_marginBottom="12dp" />
+
+    <Spinner
+        android:id="@+id/vehicleTypeSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/spinner_background"
+        android:spinnerMode="dialog"
+        android:theme="@style/SpinnerTheme" />
+
+    <!-- ✅ New Date Picker -->
+    <TextView
+        android:id="@+id/datePickerText2"
+        android:hint="Select Date (optional)"
+        android:textColor="#0B0B0B"
+        android:textColorHint="#0F0E0E"
+        android:background="@drawable/search_bar_bg"
+        android:padding="12dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="12dp"
+        android:drawableEnd="@android:drawable/ic_menu_today"
+        android:focusable="true"
+        android:clickable="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/searchu2"
+        android:text="Search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#0789F0"
+        android:layout_marginBottom="12dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleru2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+</LinearLayout>

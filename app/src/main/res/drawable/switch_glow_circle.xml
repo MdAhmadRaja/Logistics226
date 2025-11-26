@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Outer neon blue-green gradient ring -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="sweep"
+                android:startColor="#00FFAA"
+                android:centerColor="#00E0FF"
+                android:endColor="#00FFAA"
+
+                android:useLevel="false" />
+            <size android:width="72dp" android:height="72dp" />
+        </shape>
+    </item>
+
+    <!-- Middle black mask (to cut the inner fill and keep only border) -->
+    <item
+        android:left="2dp"
+        android:top="6dp"
+        android:right="2dp"
+        android:bottom="6dp">
+        <shape android:shape="oval">
+            <solid android:color="#000000" />
+        </shape>
+    </item>
+
+    <!-- Soft inner neon halo -->
+    <item>
+        <shape android:shape="oval">
+            <gradient
+                android:type="radial"
+                android:gradientRadius="40dp"
+                android:startColor="#57D4ED"
+                android:endColor="#00000000" />
+            <size android:width="70dp" android:height="70dp" />
+        </shape>
+    </item>
+
+</layer-list>

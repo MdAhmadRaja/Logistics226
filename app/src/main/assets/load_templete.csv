@@ -1,0 +1,2 @@
+logisticType,vehicleType,tons,pricePerTon,contact,sourceCity,sourceState,destinationCity,destinationState,date
+Sample Logistic,Truck,10,2000,9876543210,Pune,Maharashtra,Jamshedpur,Jharkhand,25-10-2025

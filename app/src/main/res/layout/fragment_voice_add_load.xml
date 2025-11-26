@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF7E5">
+
+    <TextView
+        android:text="🎙️ Add Load via Voice"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:textColor="#8B0000"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center"/>
+
+    <Button
+        android:id="@+id/startVoiceButton1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Voice Load Entry"
+        android:textSize="18sp"
+        android:textColor="#FFFFFF"
+        android:backgroundTint="#9B111E"
+        android:padding="15dp"
+        android:layout_gravity="center"/>
+</LinearLayout>

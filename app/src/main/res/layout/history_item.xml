@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    android:padding="5dp"
+    android:background="@drawable/bg_history_border">
+
+    <!-- FIRST CARD: Date, Logistic Name, Status -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="4dp"
+        android:backgroundTint="#E0E0E0"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20 Oct"
+                android:textSize="16sp"
+                android:textColor="#800000"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginStart="20dp"
+                android:gravity="center" />
+
+            <TextView
+                android:id="@+id/tvLogisticName"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Logistic Name"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:gravity="center"
+                android:layout_weight="1"
+                android:fontFamily="sans-serif-medium" />
+
+            <TextView
+                android:id="@+id/tvStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pending"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif"
+                android:layout_marginEnd="20dp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- SECOND CARD: Source City → Destination City -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="4dp"
+        android:backgroundTint="#F5F5F5"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:id="@+id/tvSourceCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Pune, Maharashtra"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:gravity="start"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="➜"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:textColor="#FF5722"
+                android:layout_marginHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/tvDestinationCity"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Mumbai, Maharashtra"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:gravity="end"
+                android:layout_weight="1"
+                android:layout_marginEnd="20dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <!-- THIRD CARD: Ton + Rate + Total + Delete -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        card_view:cardCornerRadius="12dp"
+        card_view:cardElevation="4dp"
+        android:backgroundTint="#F5F5F5"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            android:gravity="center_vertical">
+
+            <!-- Ton + Rate -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="20dp">
+
+                <TextView
+                    android:id="@+id/tvTon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="10 Ton"
+                    android:textSize="14sp"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tvRate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹1500 / ton"
+                    android:textSize="13sp"
+                    android:textColor="#0B0B0B" />
+            </LinearLayout>
+
+            <!-- Delete Icon -->
+            <ImageView
+                android:id="@+id/arrowIcon"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:src="@android:drawable/ic_menu_delete"
+                android:contentDescription="Delete Icon"
+                card_view:tint="#ED0808" />
+
+            <!-- Total Price -->
+            <TextView
+                android:id="@+id/tvTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="₹15,000"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:fontFamily="sans-serif-medium"
+                android:layout_marginEnd="20dp" />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
